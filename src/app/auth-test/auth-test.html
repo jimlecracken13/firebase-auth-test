@@ -1,0 +1,14 @@
+<div style="max-width:400px;margin:50px auto;text-align:center;">
+    <h2>🔥 Test Firebase Auth</h2>
+  
+    <input [(ngModel)]="email" placeholder="Email" />
+    <input [(ngModel)]="password" type="password" placeholder="Mot de passe" />
+  
+    <br><br>
+    <button (click)="register()">S'inscrire</button>
+    <button (click)="login()">Se connecter</button>
+    <button (click)="logout()">Se déconnecter</button>
+  
+    <p *ngIf="message" style="color:green">{{ message }}</p>
+  </div>
+  
